@@ -177,7 +177,7 @@ h1 {
 }
 @media (max-width: 326px){
 	.welcome{
-		font-size: -1rem;
+		font-size: 0.4vh;
 		white-space: nowrap;
 	}
 }

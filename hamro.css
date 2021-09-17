@@ -13,6 +13,7 @@ nav{
 	justify-content: space-between;
 	width: 100vw;
 	color: white;
+	position: relative;
 }
 .logo{
 	/*margin-left: 6vw;*/

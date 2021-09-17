@@ -122,7 +122,8 @@ h1 {
 	color: black;
 }
 .drpbtn:hover{
-	background: grey;
+	background: #ff6700;
+	color: white;
 }
 .aftmedia{
 	display: none;

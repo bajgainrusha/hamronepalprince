@@ -186,6 +186,10 @@ h1 {
 		font-size: 2.9vh;
 	}
 }
-body{
-	overflow: hidden;
+@media (max-width: 459px){
+	#dropdown{
+		width: 30%;
+		text-align: center;
+		
+	}
 }

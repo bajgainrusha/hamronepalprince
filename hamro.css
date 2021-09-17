@@ -130,7 +130,8 @@ h1 {
 	}
 	#dropdown{
 		display: block;
-		margin-right: 8vh;
+		position: absolute;
+		right: 0;
 	}
 	#dropping{
 		position: absolute;

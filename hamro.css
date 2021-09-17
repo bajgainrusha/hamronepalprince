@@ -92,6 +92,9 @@ main{
 	margin-bottom: 2vh;
 	font-size: 3vh;
 }
+.btns a:hover{
+	color: #00b894;
+}
 h1 {
   display: inline-block;
   margin: 0 0.5rem;

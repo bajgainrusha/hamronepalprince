@@ -155,6 +155,9 @@ h1 {
 		align-items: center;
 		text-align: center;
 	}
+	html{
+	        overflow: hidden;
+	    {
 }
 @media (max-width: 410px){
 	.logo{

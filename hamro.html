@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hamronepal</title>
+	<link rel="stylesheet" type="text/css" href="hamro.css">
+	 <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo"><h1>HAMRO NEPAL</h1></div>
+		    <div class="btns">
+			   <a href="#" id="home" class="menu">HOME</a>
+			   <a href="#" id="contact" class="menu">CONTACT</a>
+			   <a href="#" id="about" class="menu">ABOUT</a>
+			   <a href="#" id="details" class="menu">DETAILS</a>
+			   <img src="https://th.bing.com/th/id/OIP.bmatWRIcKKPTMaya4HXQmgHaGS?pid=ImgDet&rs=1" id="dropdown" width="10%" height="10%" onclick="dropdown()">
+			</div>
+		</nav>
+	<main>
+		<div class="dropinvisible" id="dropping">
+		   <div class="drpbtn">HOME</div>
+		   <div class="drpbtn">CONTACT</div>
+		   <div class="drpbtn">ABOUT</div>
+		   <div class="drpbtn">DETAILS</div>
+		</div>
+		<div class="welcome">WELCOME TO NEPAL</div>
+		<div class="visit">DO COME & VISIT <span></span></div>
+		<div class="aftmedia">
+			DO COME
+			<div id="and">&
+			</div>
+		    VISIT<br>
+	    </div>
+	    <div class="quote">"Nepal once is not enough."</div>
+	    <div class="btn">Learn More</div>
+	</main>
+  </header>
+  
+    
+</body>
+<script>
+  	let dropper = document.getElementById('dropping');
+  	
+  	function dropdown(){
+  		dropper.classList.toggle('dropinvisible');
+  	}
+  </script>
+
+</html>

@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+}
+nav{
+	display: flex;
+	background: rgba(0,0,0,0.3);
+	height: 15vh;
+	align-items: center;
+	justify-content: space-between;
+	width: 100vw;
+	color: white;
+	position: relative;
+}
+.logo{
+	/*margin-left: 6vw;*/
+	font-size: 1.5rem;
+	width: 35vw;
+	text-align: center;
+}
+.btns{
+	display: flex;
+	justify-content: space-around;
+	width: 90vh;
+	align-items: center;
+}
+body{
+	height: 100%;
+	width: 100%;
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://th.bing.com/th/id/OIP.-ips-MqhqgX2439Z4BYPtwHaEK?w=264&h=180&c=7&r=0&o=5&pid=1.7');
+	background-size: cover;
+	overflow: hidden;
+    background-repeat: no-repeat;
+}
+header{
+	height: 100vh;
+	width: 100vw;
+}
+.btns a{
+	color: white;
+	text-decoration: none;
+}
+main{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	flex-direction: column;
+	position: relative;
+}
+.welcome{
+	margin-bottom: 2vh;
+	letter-spacing: 7px;
+	font-size: 3vh;
+}
+.visit{
+	font-size: 3rem;
+	margin-bottom: 2vh;
+}
+.visit::after{
+	color: #00b894;	
+	content: '';
+    animation: city 5s infinite;
+}
+.btn{
+	background: #00b894;
+	display: inline;
+	border: 4px solid #00b894;
+	border-radius: 10px;
+	font-size: 3vh;
+}
+.btn:hover{
+	background: white;
+	color: black;
+	border: 4px solid white;
+	border-radius: 10px;
+}
+.btns a{
+	height: 2vh;
+}
+#home{
+	color: #00b894;
+}
+.quote{
+	margin-bottom: 2vh;
+	font-size: 3vh;
+}
+h1 {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: pulse;
+  animation-duration: 2s;
+  white-space: nowrap;
+  animation-iteration-count: infinite; 
+}
+
+@keyframes city{
+	0%{content: 'BHAKTAPUR'}
+	25%{content: 'POKHARA'}
+	50%{content: 'CHITWAN'}
+	75%{content: 'ITAHARI'}
+	100%{content: 'LUMBINI'}
+}
+.dropinvisible{
+	display: none;
+}
+#dropdown{
+	display: none;
+}
+.drpbtn{
+	background: white;
+	color: black;
+	margin-bottom: 1vh;
+	height: 4vh;
+	width: 15vh;
+	text-align: center;
+	margin-right: 2vw;
+	margin-left: 2vw;
+	display: flex;
+	align-items: center;
+}
+.drpbtn:hover{
+	background: #ff6700;
+	color: white;
+}
+.aftmedia{
+	display: none;
+}
+@media (max-width: 770px){
+	.menu{
+		visibility: hidden;
+	}
+	.logo{
+		font-size: 2.5vh;
+	}
+	#dropdown{
+		display: block;
+		position: absolute;
+		right: 0;
+	}
+	#dropping{
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: black;
+		border: 2px solid white;
+		border-radius: 5px;
+	}
+	.aftmedia{
+		display: block;
+		font-size: 3rem;
+	    margin-bottom: 2vh;
+		
+	}
+	.aftmedia::after{
+       color: #00b894;
+       content: '';
+       animation: city 5s infinite;
+	}
+	.visit{
+       display: none;
+	}
+	#and{
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+	body{
+	overflow: hidden;
+}
+    html{
+    	overflow: hidden;
+    }
+}
+@media (max-width: 410px){
+	.logo{
+		font-size: 1.5vh;
+	}
+	nav{
+		height: 10vh;
+		position: relative;
+	}
+	#dropdown{
+		position: absolute;
+		right: 0;
+	}
+	body{
+	overflow: hidden;
+}
+}
+@media (max-width: 326px){
+	.welcome{
+		font-size: 1.9vh;
+		white-space: nowrap;
+	}
+	body{
+	overflow: hidden;
+}
+}
+@media (max-width: 280px){
+	.aftmedia{
+		font-size: 2.9vh;
+	}
+	body{
+	overflow: hidden;
+}
+}
